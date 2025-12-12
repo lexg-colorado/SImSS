@@ -1,0 +1,106 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Jupyter
+.ipynb_checkpoints/
+
+# SImS specific - data directories (contains user data)
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache directories
+cache/
+.cache/
+
+# ChromaDB data
+chroma/
+
+# Test/sample images (user photos)
+Pictures/
+_Pictures/
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.heif
+*.cr2
+*.nef
+*.arw
+*.dng
+
+# Keep test fixtures
+!tests/fixtures/*.jpg
+!tests/fixtures/*.png
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Claude Code
+.claude/
+CLAUDE.md
+
+# Development documentation (local only)
+PHASED_DEVELOPMENT_PLAN.md
+SImS_ARCHITECTURE.md

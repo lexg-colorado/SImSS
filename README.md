@@ -4,6 +4,8 @@ A local-first semantic image search system using vision-language models. SImS au
 
 Point it at a directory of photos, and it handles the rest—resizing for inference, extracting metadata, generating descriptions with AI, and building a searchable vector index.
 
+> **Looking for the LM Studio version?** See [SImSS-LMSTUDIO](https://github.com/lexg-colorado/SImSS-LMSTUDIO).
+
 ## Key Features
 
 - **Local-First**: All processing happens on your machine. No cloud uploads, no API costs, complete privacy.

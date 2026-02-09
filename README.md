@@ -1,6 +1,6 @@
-# SImS - Semantic Image Search
+# SImSS - Semantic Image Search System
 
-A local-first semantic image search system using vision-language models. SImS automatically describes, tags, and indexes your images for natural language querying.
+A local-first semantic image search system using vision-language models. SImSS automatically describes, tags, and indexes your images for natural language querying.
 
 Point it at a directory of photos, and it handles the rest—resizing for inference, extracting metadata, generating descriptions with AI, and building a searchable vector index.
 
@@ -13,7 +13,7 @@ Point it at a directory of photos, and it handles the rest—resizing for infere
 - **Natural Language Search**: Find images by describing what you're looking for ("sunset at the beach", "group photo at birthday party").
 - **EXIF Metadata Extraction**: Automatically extracts date taken, GPS coordinates, and camera information.
 - **Multi-Format Support**: Handles JPEG, PNG, HEIC/HEIF, and RAW formats (CR2, NEF, ARW, DNG).
-- **Resumable Processing**: Stop and restart anytime—SImS picks up where it left off.
+- **Resumable Processing**: Stop and restart anytime—SImSS picks up where it left off.
 - **Change Detection**: Only reprocesses images that have actually changed.
 - **Graceful Shutdown**: Ctrl+C safely stops processing without data corruption.
 
@@ -28,7 +28,7 @@ Point it at a directory of photos, and it handles the rest—resizing for infere
 1. **Clone the repository**
    ```bash
    git clone https://github.com/lexg-colorado/SImSS.git
-   cd SImS
+   cd SImSS
    ```
 
 2. **Create and activate virtual environment**
@@ -49,7 +49,7 @@ Point it at a directory of photos, and it handles the rest—resizing for infere
    ollama pull nomic-embed-text  # Embedding model
    ```
 
-5. **Initialize SImS**
+5. **Initialize SImSS**
    ```bash
    python -m sims init
    ```
@@ -192,11 +192,11 @@ This is useful when you've moved or deleted original image files and want to cle
 
 ## Configuration
 
-SImS uses environment variables for configuration. Defaults work for most setups:
+SImSS uses environment variables for configuration. Defaults work for most setups:
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `SIMS_HOME` | `/home/user/sims` | Base directory for SImS data |
+| `SIMS_HOME` | `/home/user/sims` | Base directory for SImSS data |
 | `SIMS_CACHE_DIR` | `$SIMS_HOME/cache` | Thumbnail cache location |
 | `SIMS_DB_PATH` | `$SIMS_HOME/data/sims.db` | SQLite database path |
 | `SIMS_CHROMA_PATH` | `$SIMS_HOME/data/chroma` | ChromaDB storage path |
@@ -260,7 +260,7 @@ pytest tests/test_agent.py -v
 ## Project Structure
 
 ```
-SImS/
+SImSS/
 ├── sims/
 │   ├── __init__.py      # Package init
 │   ├── __main__.py      # CLI entry point
